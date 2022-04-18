@@ -13,7 +13,7 @@ namespace Anamnesis.Character
 			SaveMode = CharacterFile.SaveModes.All,
 
 			Race = ActorCustomizeMemory.Races.Hyur,
-			Gender = ActorCustomizeMemory.Genders.Feminine,
+			Gender = ActorCustomizeMemory.Genders.Female,
 			Age = ActorCustomizeMemory.Ages.Normal,
 			Height = 50,
 			Tribe = ActorCustomizeMemory.Tribes.Midlander,

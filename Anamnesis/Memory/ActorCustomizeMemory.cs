@@ -10,8 +10,8 @@ namespace Anamnesis.Memory
 	{
 		public enum Genders : byte
 		{
-			Masculine = 0,
-			Feminine = 1,
+			Male = 0,
+			Female = 1,
 		}
 
 		public enum Races : byte
@@ -72,7 +72,7 @@ namespace Anamnesis.Memory
 			Customize ap = default;
 
 			ap.Race = Races.Hyur;
-			ap.Gender = Genders.Feminine;
+			ap.Gender = Genders.Female;
 			ap.Age = Ages.Normal;
 			ap.Tribe = Tribes.Midlander;
 

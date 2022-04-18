@@ -16,11 +16,11 @@ namespace Anamnesis.GameData.Excel
 	public class Race : ExcelRow
 	{
 		public string Name => this.CustomizeRace.ToString();
-		public string DisplayName => this.Masculine;
+		public string DisplayName => this.Male;
 		public ActorCustomizeMemory.Races CustomizeRace => (ActorCustomizeMemory.Races)this.RowId;
 
-		public string Feminine { get; private set; } = string.Empty;
-		public string Masculine { get; private set; } = string.Empty;
+		public string Female { get; private set; } = string.Empty;
+		public string Male { get; private set; } = string.Empty;
 		public int RSEMBody { get; private set; } = 0;
 		public int RSEMHands { get; private set; } = 0;
 		public int RSEMLegs { get; private set; } = 0;
@@ -35,8 +35,8 @@ namespace Anamnesis.GameData.Excel
 		{
 			base.PopulateData(parser, gameData, language);
 
-			this.Masculine = parser.ReadColumn<SeString>(0) ?? string.Empty;
-			this.Feminine = parser.ReadColumn<SeString>(1) ?? string.Empty;
+			this.Male = parser.ReadColumn<SeString>(0) ?? string.Empty;
+			this.Female = parser.ReadColumn<SeString>(1) ?? string.Empty;
 
 			this.RSEMBody = parser.ReadColumn<int>(2);
 			this.RSEMHands = parser.ReadColumn<int>(3);

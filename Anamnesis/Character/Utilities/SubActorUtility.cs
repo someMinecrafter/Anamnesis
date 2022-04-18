@@ -86,7 +86,7 @@ namespace Anamnesis.Character.Utilities
 				case ActorCustomizeMemory.Races.Hyur:
 					switch(memory.Customize.Gender)
 					{
-						case ActorCustomizeMemory.Genders.Masculine:
+						case ActorCustomizeMemory.Genders.Male:
 							switch (memory.Customize.Tribe)
 							{
 								case ActorCustomizeMemory.Tribes.Midlander:
@@ -99,7 +99,7 @@ namespace Anamnesis.Character.Utilities
 
 							break;
 
-						case ActorCustomizeMemory.Genders.Feminine:
+						case ActorCustomizeMemory.Genders.Female:
 							switch (memory.Customize.Tribe)
 							{
 								case ActorCustomizeMemory.Tribes.Midlander:
@@ -118,11 +118,11 @@ namespace Anamnesis.Character.Utilities
 				case ActorCustomizeMemory.Races.Elezen:
 					switch (memory.Customize.Gender)
 					{
-						case ActorCustomizeMemory.Genders.Masculine:
+						case ActorCustomizeMemory.Genders.Male:
 							mountScaleFactor = mountCustomize.ElezenMaleScale;
 							break;
 
-						case ActorCustomizeMemory.Genders.Feminine:
+						case ActorCustomizeMemory.Genders.Female:
 							mountScaleFactor = mountCustomize.ElezenFemaleScale;
 							break;
 					}
@@ -132,11 +132,11 @@ namespace Anamnesis.Character.Utilities
 				case ActorCustomizeMemory.Races.Lalafel:
 					switch (memory.Customize.Gender)
 					{
-						case ActorCustomizeMemory.Genders.Masculine:
+						case ActorCustomizeMemory.Genders.Male:
 							mountScaleFactor = mountCustomize.LalaMaleScale;
 							break;
 
-						case ActorCustomizeMemory.Genders.Feminine:
+						case ActorCustomizeMemory.Genders.Female:
 							mountScaleFactor = mountCustomize.LalaFemaleScale;
 							break;
 					}
@@ -146,11 +146,11 @@ namespace Anamnesis.Character.Utilities
 				case ActorCustomizeMemory.Races.Miqote:
 					switch (memory.Customize.Gender)
 					{
-						case ActorCustomizeMemory.Genders.Masculine:
+						case ActorCustomizeMemory.Genders.Male:
 							mountScaleFactor = mountCustomize.MiqoMaleScale;
 							break;
 
-						case ActorCustomizeMemory.Genders.Feminine:
+						case ActorCustomizeMemory.Genders.Female:
 							mountScaleFactor = mountCustomize.MiqoFemaleScale;
 							break;
 					}
@@ -160,11 +160,11 @@ namespace Anamnesis.Character.Utilities
 				case ActorCustomizeMemory.Races.Roegadyn:
 					switch (memory.Customize.Gender)
 					{
-						case ActorCustomizeMemory.Genders.Masculine:
+						case ActorCustomizeMemory.Genders.Male:
 							mountScaleFactor = mountCustomize.RoeMaleScale;
 							break;
 
-						case ActorCustomizeMemory.Genders.Feminine:
+						case ActorCustomizeMemory.Genders.Female:
 							mountScaleFactor = mountCustomize.RoeFemaleScale;
 							break;
 					}
@@ -174,11 +174,11 @@ namespace Anamnesis.Character.Utilities
 				case ActorCustomizeMemory.Races.AuRa:
 					switch (memory.Customize.Gender)
 					{
-						case ActorCustomizeMemory.Genders.Masculine:
+						case ActorCustomizeMemory.Genders.Male:
 							mountScaleFactor = mountCustomize.AuRaMaleScale;
 							break;
 
-						case ActorCustomizeMemory.Genders.Feminine:
+						case ActorCustomizeMemory.Genders.Female:
 							mountScaleFactor = mountCustomize.AuRaFemaleScale;
 							break;
 					}
@@ -188,7 +188,7 @@ namespace Anamnesis.Character.Utilities
 				case ActorCustomizeMemory.Races.Hrothgar:
 					switch (memory.Customize.Gender)
 					{
-						case ActorCustomizeMemory.Genders.Masculine:
+						case ActorCustomizeMemory.Genders.Male:
 							mountScaleFactor = mountCustomize.HrothgarMaleScale;
 							break;
 					}
@@ -198,11 +198,11 @@ namespace Anamnesis.Character.Utilities
 				case ActorCustomizeMemory.Races.Viera:
 					switch (memory.Customize.Gender)
 					{
-						case ActorCustomizeMemory.Genders.Masculine:
+						case ActorCustomizeMemory.Genders.Male:
 							mountScaleFactor = mountCustomize.HrothgarMaleScale;
 							break;
 
-						case ActorCustomizeMemory.Genders.Feminine:
+						case ActorCustomizeMemory.Genders.Female:
 							mountScaleFactor = mountCustomize.HrothgarMaleScale;
 							break;
 					}

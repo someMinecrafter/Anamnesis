@@ -17,8 +17,8 @@
 
 	<UserControl.Resources>
 
-		<converters:MasculineGenderToVisibilityConverter x:Key="mGenderVis"/>
-		<converters:MasculineGenderToVisibilityConverter x:Key="fGenderVis"/>
+		<converters:MaleGenderToVisibilityConverter x:Key="mGenderVis"/>
+		<converters:MaleGenderToVisibilityConverter x:Key="fGenderVis"/>
 
 		<BooleanToVisibilityConverter x:Key="B2V"/>
 		<XivToolsWpf.Converters:InvertedBoolToVisibilityConverter x:Key="!B2V" />

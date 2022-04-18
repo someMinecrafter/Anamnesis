@@ -51,7 +51,7 @@ namespace Anamnesis.GameData.Sheets
 
 		private static int GetFeatureStartIndex(Features featureType, ActorCustomizeMemory.Tribes tribe, ActorCustomizeMemory.Genders gender)
 		{
-			bool isMasc = gender == ActorCustomizeMemory.Genders.Masculine;
+			bool isMasc = gender == ActorCustomizeMemory.Genders.Male;
 
 			if (featureType == Features.Hair)
 			{

@@ -112,7 +112,7 @@ namespace Anamnesis.Character.Views
 
 		private double GetMinHeight(ActorCustomizeMemory.Genders gender, ActorCustomizeMemory.Tribes tribe)
 		{
-			bool isMale = gender == ActorCustomizeMemory.Genders.Masculine;
+			bool isMale = gender == ActorCustomizeMemory.Genders.Male;
 
 			switch (tribe)
 			{
@@ -154,7 +154,7 @@ namespace Anamnesis.Character.Views
 
 		private double GetMaxHeight(ActorCustomizeMemory.Genders gender, ActorCustomizeMemory.Tribes tribe)
 		{
-			bool isMale = gender == ActorCustomizeMemory.Genders.Masculine;
+			bool isMale = gender == ActorCustomizeMemory.Genders.Male;
 
 			switch (tribe)
 			{
