@@ -115,10 +115,10 @@ namespace Anamnesis.PoseModule
 				if (customize == null)
 					return false;
 
-				if (customize.Gender == ActorCustomizeMemory.Genders.Feminine && customize.TailEarsType == 3)
+				if (customize.Gender == ActorCustomizeMemory.Genders.Female && customize.TailEarsType == 3)
 					return true;
 
-				if (customize.Gender == ActorCustomizeMemory.Genders.Masculine && customize.TailEarsType == 2)
+				if (customize.Gender == ActorCustomizeMemory.Genders.Male && customize.TailEarsType == 2)
 					return true;
 
 				return false;

@@ -116,7 +116,7 @@ namespace Anamnesis.Character.Pages
 			if (race == null)
 				return;
 
-			if(this.Actor.Customize.Gender == ActorCustomizeMemory.Genders.Masculine)
+			if(this.Actor.Customize.Gender == ActorCustomizeMemory.Genders.Male)
 			{
 				var body = GameDataService.Items.Get((uint)race.RSEMBody);
 				var hands = GameDataService.Items.Get((uint)race.RSEMHands);

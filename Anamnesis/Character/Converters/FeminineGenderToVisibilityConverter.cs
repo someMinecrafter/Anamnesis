@@ -10,12 +10,12 @@ namespace Anamnesis.Character.Converters
 	using Anamnesis.Memory;
 
 	[ValueConversion(typeof(ActorCustomizeMemory.Genders), typeof(Visibility))]
-	public class FeminineGenderToVisibilityConverter : IValueConverter
+	public class FemaleGenderToVisibilityConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{
 			ActorCustomizeMemory.Genders gender = (ActorCustomizeMemory.Genders)value;
-			return gender == ActorCustomizeMemory.Genders.Feminine ? Visibility.Visible : Visibility.Collapsed;
+			return gender == ActorCustomizeMemory.Genders.Female ? Visibility.Visible : Visibility.Collapsed;
 		}
 
 		public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

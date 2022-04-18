@@ -118,18 +118,18 @@ namespace Anamnesis.Character.Utilities
 
 		private static int GetTribeSkinStartIndex(ActorCustomizeMemory.Tribes tribe, ActorCustomizeMemory.Genders gender)
 		{
-			bool isMasculine = gender == ActorCustomizeMemory.Genders.Masculine;
+			bool isMale = gender == ActorCustomizeMemory.Genders.Male;
 
-			int genderValue = isMasculine ? 0 : 1;
+			int genderValue = isMale ? 0 : 1;
 			int listIndex = ((((int)tribe * 2) + genderValue) * 5) + 3;
 			return listIndex * 256;
 		}
 
 		private static int GetTribeHairStartIndex(ActorCustomizeMemory.Tribes tribe, ActorCustomizeMemory.Genders gender)
 		{
-			bool isMasculine = gender == ActorCustomizeMemory.Genders.Masculine;
+			bool isMale = gender == ActorCustomizeMemory.Genders.Male;
 
-			int genderValue = isMasculine ? 0 : 1;
+			int genderValue = isMale ? 0 : 1;
 			int listIndex = ((((int)tribe * 2) + genderValue) * 5) + 4;
 			return listIndex * 256;
 		}

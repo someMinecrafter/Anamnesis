@@ -175,7 +175,7 @@ namespace Anamnesis.Character.Views
 			this.HasGender = this.Customize.Race != AnAppearance.Races.Hrothgar;
 
 			bool canAge = this.Customize.Tribe == AnAppearance.Tribes.Midlander;
-			canAge |= this.Customize.Race == AnAppearance.Races.Miqote && this.Customize.Gender == AnAppearance.Genders.Feminine;
+			canAge |= this.Customize.Race == AnAppearance.Races.Miqote && this.Customize.Gender == AnAppearance.Genders.Female;
 			canAge |= this.Customize.Race == AnAppearance.Races.Elezen;
 			canAge |= this.Customize.Race == AnAppearance.Races.AuRa;
 			this.CanAge = canAge;
@@ -250,7 +250,7 @@ namespace Anamnesis.Character.Views
 				return;
 
 			if (race.CustomizeRace == AnAppearance.Races.Hrothgar)
-				this.Customize.Gender = AnAppearance.Genders.Masculine;
+				this.Customize.Gender = AnAppearance.Genders.Male;
 
 			// reset age when chaing race
 			this.Customize.Age = AnAppearance.Ages.Normal;

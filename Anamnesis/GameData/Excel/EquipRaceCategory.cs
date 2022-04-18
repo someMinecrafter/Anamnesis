@@ -40,10 +40,10 @@ namespace Anamnesis.GameData.Excel
 
 		public bool CanEquip(ActorCustomizeMemory.Races race, ActorCustomizeMemory.Genders gender)
 		{
-			if (!this.Male && gender == ActorCustomizeMemory.Genders.Masculine)
+			if (!this.Male && gender == ActorCustomizeMemory.Genders.Male)
 				return false;
 
-			if (!this.Female && gender == ActorCustomizeMemory.Genders.Feminine)
+			if (!this.Female && gender == ActorCustomizeMemory.Genders.Female)
 				return false;
 
 			if (!this.Hyur && race == ActorCustomizeMemory.Races.Hyur)
